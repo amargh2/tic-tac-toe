@@ -1,0 +1,46 @@
+.gamespace {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: black
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color:orange;
+    border-bottom: solid black 10px;
+    font-size: 2rem;
+}
+
+.gamebox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    background-color: orange;
+    font-size: 5rem;
+}
+
+.button {
+    width: 10rem;
+    height: 10rem;
+    background-color: black;
+    color: white;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.playerinput {
+    width:25rem;
+    height: 2.5rem;
+}
+
+.submit {
+    height: 3rem;
+    border-radius: 5px;
+    color: white;
+    background-color:black;
+    font-size: 1.5rem;
+}

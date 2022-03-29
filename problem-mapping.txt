@@ -1,0 +1,25 @@
+<------>just a scribble pad to think out the problem<------>
+
+the gameboard should be able to update dynamically to other functions.
+the gameboard should correspond with the divs in some meaningful way.
+index corresponding with class-name or data id of div.
+how will we decide who wins? put all combos of win conditions in the code and
+each time a turn is taken it runs through the eval for win condition.
+the results should be reported on the screen somehow; a winner should be declared, or a tie.
+
+
+the click areas in the document (divs) will change the gameboard object to an 
+x or an o (how will we alternate players? how will we know whose turn is whose? or will each div contain an x/o button? what about computer?)
+
+there should be some place in the display (header? footer? side?) that populateswith the player's names and a scoreboard.
+
+the player info needed = name. 
+
+it would be cool to create an intro screen that asks if one player or two player and gets the names of the player(s). might be a neat chance to create a bot that can play against the player, and also to use CSS properties I am less familiar with.
+
+--->this is a scribble about the best way to select for divs and to change the game board data <---
+
+ok. so we are at the part where we are mapping the dom to the functions -- 
+i am tempted to just hardcode each data-set of the div to the div (there are only 9 to do) but it is ugly, for sure. i'm wondering if there isn't a more elegant way to do it. if not, i can definitely just hard code it and i think it will start work. need to change how we are accessing the board, because the big solution i thought i was doing did not work. haha.
+
+

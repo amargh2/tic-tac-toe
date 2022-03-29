@@ -1,0 +1,23 @@
+    
+    function createAndAppendXTextNode(div) {
+        xText = document.createTextNode('X');
+        div.appendChild(xText);
+    }
+
+    function createAndAppendOTextNode(div) {
+        oText = document.createTextNode('O');
+        div.appendChild(oText);
+    }
+
+    function changeBoardValueToX(div) {
+        valueToChange = div.dataset.id
+        box = box+valueToChange
+        console.log(box)
+        board.box = 'x'
+    }
+    
+    function changeBoardValueToO(div) {
+        valueToChange = div.dataset.id;
+        box = `box${valueToChange}`
+        board.box = 'o'
+    }
