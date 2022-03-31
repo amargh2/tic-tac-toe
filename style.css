@@ -12,6 +12,7 @@
     background-color:orange;
     border-bottom: solid black 10px;
     font-size: 2rem;
+    align-items: center;
 }
 
 .gamebox {
