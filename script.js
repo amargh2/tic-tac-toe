@@ -20,56 +20,59 @@ const game = (function () {
     //checks for win and publishes winner to the header
     function checkForXWin(board) {
         if (board.box0 =='x' && board.box1 =='x' && board.box2 =='x') {
-            header.textContent = 'x wins'
+            header.textContent = 'x WINS!'
         }
         if (board.box0 =='x' && board.box4 =='x' && board.box8 =='x') {
-            header.textContent = 'X wins'
+            header.textContent = 'X WINS!'
         }
         if (board.box3 =='x' && board.box4 =='x' && board.box5 =='x') {
-            header.textContent = 'X wins'
+            header.textContent = 'X WINS!'
         }
         if (board.box6 =='x' && board.box7 =='x' && board.box8 =='x') {
-            header.textContent = 'X wins'
+            header.textContent = 'X WINS!'
         }
         if (board.box2 =='x' && board.box5 =='x' && board.box8 =='x') {
-            header.textContent = 'X wins'
+            header.textContent = 'X WINS!'
         }
         if (board.box1 =='x' && board.box4 =='x' && board.box7 =='x') {
-            header.textContent = 'X wins'
+            header.textContent = 'X WINS!'
         }
         if (board.box0 =='x' && board.box3 =='x' && board.box6 =='x') {
-            header.textContent = 'X wins'
+            header.textContent = 'X WINS!'
         }    
     }
     
     function checkForOWin(board) {
         if (board.box0 =='o' && board.box1 =='o' && board.box2 =='o') {
-            header.textContent = 'O wins'
+            header.textContent = 'O WINS!'
         }
         if (board.box0 =='o' && board.box4 =='o' && board.box8 =='o') {
-            header.textContent = 'O wins'
+            header.textContent = 'O WINS!'
         }
         if (board.box3 =='o' && board.box4 =='o' && board.box5 =='o') {
-            header.textContent = 'O wins'
+            header.textContent = 'O WINS!'
         }
         if (board.box6 =='o' && board.box7 =='o' && board.box8 =='o') {
-            header.textContent = 'O wins'
+            header.textContent = 'O WINS!'
         }
         if (board.box2 =='o' && board.box5 =='o' && board.box8 =='o') {
-            header.textContent = 'O wins'
+            header.textContent = 'O WINS!'
         }
         if (board.box1 =='o' && board.box4 =='o' && board.box7 =='o') {
-            header.textContent = 'O wins'
+            header.textContent = 'O WINS!'
         }
         if (board.box0 =='o' && board.box3 =='o' && board.box6 =='o') {
-            header.textContent = 'O wins'
+            header.textContent = 'O WINS!'
         }
         
     }
 
     board.box0.indexOf()
-    //this is ugly -- i admit it; but it felt like the easiest way at the time. will look into how to refactor/simplify this eventually. just wanted something working.
-    //this is the click event listener that alters the game board as well as the board value
+//defines the visual boardspace and the click event; uses the listener
+//to change the targeted button's parent element to the selected value, 
+// which we find through the button's class name; then iterates
+//through the board object with the data id of the div
+ //to update the value of the board
     gameSpace = document.querySelector('.gamespace')
     gameSpace.addEventListener('click', function(e){
         if (e.target.classList.contains('x')) {
