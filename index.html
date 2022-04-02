@@ -11,12 +11,14 @@
 <body>
     <div class="header">
         <div class="players">
-            <label for="player1" id="playerx">Player X:</label>
-            <input class="playerinput" type="text" name="player1" id="player1">
-            <label for="player1" id="playero">Player O:</label>
-            <input class="playerinput" type="text" name="player1" id="player1">
-            <button class="submit">Submit</button>
+            <form action>
+                <label for="player1" id="playerx">Player X:</label>
+                <input class="playerinput" type="text" name="player1" id="player1" required>
+                <label for="player1" id="playero">Player O:</label>
+                <input class="playerinput" type="text" name="player2" id="player2" required>
+            </form>
         </div>
+        <button class="submit">Submit</button>
     </div>
     <div class="gamespace">
         <div class="gamebox" data-id="0">
