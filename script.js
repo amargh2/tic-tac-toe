@@ -104,6 +104,7 @@ const game = (function () {
                 }
             }
         }
+//quick and dirty way to get the name variables if entered instead of x/o
         header = document.querySelector('.header')
         if (header.textContent.split(' ')[1] == 'vs') {
             playerX = header.textContent.split(' ')[0]
@@ -146,6 +147,5 @@ const player = (function() {
         playerX = getPlayerX();
         playerO = getPlayerO();
         postToBoard(playerX,playerO);
-        return [playerX, playerO]
     }) 
 }())
